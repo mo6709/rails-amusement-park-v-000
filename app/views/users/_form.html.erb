@@ -1,0 +1,27 @@
+<%=  form_for User.new do |user_builder| %>
+ <%= user_builder.label :name %>
+ <%= user_builder.text_field :name %><br>
+
+ <%= user_builder.label :password %>
+ <%= user_builder.text_field :password %><br>
+
+ <%= user_builder.label :password_confirmation %>
+ <%= user_builder.text_field :password_confirmation%><br>
+ 
+ <label>How tall are you?</label>
+ <%= user_builder.number_field :height %><br>
+
+ <label>How happy are you? 1-5</label>
+ <%= user_builder.number_field :happiness %><br>
+ 
+ <label>How nauseous are you? (1-5 scale)</label>
+ <%= user_builder.number_field :nausea%><br>
+
+ <label>How much money you would like to spand?</label>
+ <%= user_builder.number_field :tickets%><br>
+
+ <label>Are you admin?</label>
+ <%= user_builder.check_box :admin%>
+
+ <%= user_builder.submit %>
+<% end %>

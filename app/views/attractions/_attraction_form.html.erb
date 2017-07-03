@@ -1,0 +1,18 @@
+<%= form_for attraction do |atrc_builder| %>
+<label><strong>Name:</strong></label>
+<%= atrc_builder.text_field :name %><br>
+
+<label><strong>Height Requirement (in inches):</strong></label>
+<%= atrc_builder.number_field :min_height %><br>
+
+<label><strong>How fun is it?</strong></label>
+<%= atrc_builder.number_field :happiness_rating %><br>
+
+<label><strong>How neasues is it?</strong></label>
+<%= atrc_builder.number_field :nausea_rating %><br>
+
+<label><strong>How many ticket it cost?</strong></label>
+<%= atrc_builder.number_field :tickets %><br>
+
+<%= atrc_builder.submit %>
+<% end %>

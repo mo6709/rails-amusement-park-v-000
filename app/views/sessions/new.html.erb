@@ -1,0 +1,11 @@
+<h1>Signin</h1>
+
+<%= form_tag(sessions_create_path, method: 'post') do %>
+ <label>Name:</label>
+ <%= text_field_tag("user[name]")%><br>
+
+ <label>Password:</label>
+ <%= text_field_tag("user[password]")%>
+
+ <%= submit_tag("Sign In")%>
+<% end %>
